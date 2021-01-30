@@ -5,6 +5,16 @@
 (global-hl-line-mode 1)
 (setq frame-title-format "%b@yawl2u")
 
+;; maximize frame on start-up
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
+
+;; default font
+(set-face-attribute 'default nil
+		    :family "Fira Code"
+		    :height 140
+		    :weight 'normal
+		    :width 'normal)
+
 ;; Remove
 (tool-bar-mode 0)
 (menu-bar-mode 0)

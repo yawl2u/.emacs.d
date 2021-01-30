@@ -1,2 +1,5 @@
 .saves/
 elpa/
+transient/
+auto-save-list/
+forge-database.sqlite
