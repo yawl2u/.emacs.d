@@ -5,8 +5,16 @@
 (package-initialize)
 
 ;; load files
-(load-file "~/.emacs.d/custom.el")
-(load-file "~/.emacs.d/plugins.el")
+(defun load-if-exists (f)
+  "load the elisp file only if it exists and is readable"
+  (if (file-readable-p f)
+      (load-file f)))
+
+(load-if-exists "~/.emacs.d/config/custom.el")
+(load-if-exists "~/.emacs.d/config/interface-tweaks.el")
+(load-if-exists "~/.emacs.d/config/+evil.el")
+(load-if-exists "~/.emacs.d/config/+magit.el")
+(load-if-exists "~/.emacs.d/config/others.el")
 
 ;; bootstrap use-package
 (unless (package-installed-p 'use-package)
