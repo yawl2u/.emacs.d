@@ -1,5 +1,8 @@
 .saves/
+.cache/
 elpa/
 transient/
 auto-save-list/
+recentf
+projectile-bookmarks.eld
 forge-database.sqlite

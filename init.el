@@ -1,6 +1,7 @@
 ;; load package manager, add the MELPA package registry
 (require 'package)
-(add-to-list 'package-archives '("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/") t)
+(setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
+                         ("melpa" . "http://elpa.emacs-china.org/melpa/")))
 ;; Activate all the packages (in particular autoloads)
 (package-initialize)
 
@@ -15,6 +16,7 @@
 (load-if-exists "~/.emacs.d/config/+evil.el")
 (load-if-exists "~/.emacs.d/config/+magit.el")
 (load-if-exists "~/.emacs.d/config/others.el")
+(load-if-exists "~/.emacs.d/config/program/project.el")
 
 ;; bootstrap use-package
 (unless (package-installed-p 'use-package)
