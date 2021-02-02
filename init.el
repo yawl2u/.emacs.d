@@ -17,6 +17,7 @@
 (load-if-exists "~/.emacs.d/config/+magit.el")
 (load-if-exists "~/.emacs.d/config/others.el")
 (load-if-exists "~/.emacs.d/config/program/project.el")
+(load-if-exists "~/.emacs.d/config/program/init-lsp.el")
 
 ;; bootstrap use-package
 (unless (package-installed-p 'use-package)

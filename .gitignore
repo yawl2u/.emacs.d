@@ -1,8 +1,11 @@
+.lsp-session-v1
 .saves/
 .cache/
 elpa/
 transient/
+workspace/
 auto-save-list/
+eclipse.jdt.ls/
 recentf
 projectile-bookmarks.eld
 forge-database.sqlite
