@@ -1,6 +1,7 @@
 .lsp-session-v1
 .saves/
 .cache/
+cnfonts/
 elpa/
 transient/
 workspace/
