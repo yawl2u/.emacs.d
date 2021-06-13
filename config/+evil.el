@@ -3,7 +3,7 @@
   :defer .1 ;; don't block emacs when starting, load evil immediately after startup
   :init
   (setq evil-want-keybinding nil)
-  (setq evil-want-integration nil) ;; required by evil-collection
+  (setq evil-want-integration t) ;; required by evil-collection
   (setq evil-search-module 'evil-search)
   (setq evil-ex-complete-emacs-commands nil)
   (setq evil-vsplit-window-right t) ;; like vim's 'splitright'
@@ -83,6 +83,5 @@
     (evil-define-key 'operator global-map "s" 'evil-surround-edit)
     (evil-define-key 'operator global-map "S" 'evil-Surround-edit)
     (evil-define-key 'visual global-map "S" 'evil-surround-region)
-    (evil-define-key 'visual global-map "gS" 'evil-Surround-region))
-
-  (message "Loading evil-mode...done"))
+    (evil-define-key 'visual global-map "gS" 'evil-Surround-region)))
+  ;; (message "Loading evil-mode...done"))

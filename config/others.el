@@ -1,6 +1,6 @@
 ;; ====== which-key ======
 (use-package which-key
-  :ensure t 
+  :ensure t
   :config
   (which-key-mode))
 ;; ====== which-key ======
@@ -40,4 +40,3 @@
 ;; Don't ask for confirmation to delete marked buffers
 (setq ibuffer-expert t)
 ;; ====== ibuffer ======
-
